@@ -65,11 +65,12 @@
     "tooltip-format-ethernet": "{ifname} \nIP: {ipaddr}",
     // "on-click": "nmtui",
     "interval": 5,
-  },"hyprland/language": {
+  },
+  "hyprland/language": {
     "format": "{}",
     "format-en": "US",
     "format-uk": "UA",
-    "keyboard-name": "at-translated-set-2-keyboard"
+    "keyboard-name": "at-translated-set-2-keyboard",
   },
   "cpu": {
     "format": " {usage}%",
@@ -88,10 +89,9 @@
     },
     "on-click": "pavucontrol",
   },
-  },
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
     "format": "⏻",
-  }
+  },
 }
