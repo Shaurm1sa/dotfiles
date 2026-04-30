@@ -78,7 +78,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-	git sudo copyfile ssh copybuffer history docker docker-compose
+	git sudo copyfile ssh copybuffer history docker docker-compose podman
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,13 +110,22 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
+
+###############
+### ALIASES ###
+###############
+
 alias zshconfig="nano ~/.zshrc"
-#alias ohmyzsh="mate ~/.oh-my-zsh"
+alias ohmyzsh="mate ~/.oh-my-zsh"
 alias c="clear"
 alias hyprconf="nano ~/.config/hypr/hyprland.conf"
 alias stopdocker="sudo systemctl stop docker.service; sudo systemctl stop docker.socket"
 alias startdocker="sudo systemctl start docker.service"
 alias publicip="curl ifconfig.me"
+
+###########
+### END ###
+###########
 
 export XDG_DATA_DIRS=$XDG_DATA_DIRS:$HOME/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
