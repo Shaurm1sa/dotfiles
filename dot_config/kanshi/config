@@ -6,22 +6,17 @@ output "HDMI-A-1" {
     alias $EXTERNAL
 }
 
-# Цей профіль спрацює, коли підключено ОБИДВА кабелі, 
-# але ти хочеш бачити зображення тільки на моніторі.
 profile monitor_only {
     output $EXTERNAL enable mode 1920x1080@120 position 0,0
     output $INTERNAL disable
 }
 
-# Цей профіль спрацює, коли ти хочеш ОБИДВА екрани.
-# Щоб Kanshi не плутав його з попереднім, зазвичай 
-# Kanshi обирає перший підходящий профіль зверху вниз.
+
 profile dual {
     output $EXTERNAL enable mode 1920x1080@120 position 0,0 scale 1.0
     output $INTERNAL enable mode 1920x1080@60.06 position 1920,0 scale 1.0
 }
 
-# Цей профіль спрацює, коли HDMI фізично витягнутий.
 profile laptop_only {
     output $INTERNAL enable mode 1920x1080@60.06 position 0,0 scale 1.0
 }
