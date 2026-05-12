@@ -1,4 +1,4 @@
-local terminal = "alacritty"
-local fileManager = "thunar"
-local menu = "wofi --show drun"
-local browser = "zen-browser"
+terminal = "alacritty"
+fileManager = "thunar"
+menu = "wofi --show drun"
+browser = "zen-browser"

@@ -43,13 +43,15 @@ hl.window_rule({
 
 hl.window_rule({
   name = "pip-window",
-  match = { title = "Зображення в зображенні" },
-  float = true,
-  size = "324,181",
-  move = "1584,886",
-  pin = true,
+  match = {
+    title = "Зображення в зображенні",
+    float = true,
+    pin = true,
+    content = "video"
+  },
+  size = { "324", "181" },
+  move = { "1584", "886" },
   animation = "slide right",
-  content = "video"
 })
 
 require("windowrules.thunar")
