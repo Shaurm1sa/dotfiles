@@ -25,8 +25,11 @@ hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("toggle"))
 
 -- Screenshots
 hl.bind("Print", hl.dsp.exec_cmd("grim ~/Pictures/screenshots/$(date +%s).png | grim - |wl-copy"))
-hl.bind("CTRL + Print", hl.dsp.exec_cmd('grim -g "$(slurp) - | wl-copy'))
-hl.bind("SHIFT + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Pictures/screenshots/$(date +%s).png | grim - | wl-copy'))
+hl.bind("CTRL + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
+hl.bind(
+	"SHIFT + Print",
+	hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Pictures/screenshots/$(date +%s).png | grim - | wl-copy')
+)
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]
