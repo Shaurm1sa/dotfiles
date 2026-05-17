@@ -1,4 +1,4 @@
 terminal = "alacritty"
-fileManager = "thunar"
+fileManager = "dolphin"
 menu = "wofi --show drun"
 browser = "zen-browser"
