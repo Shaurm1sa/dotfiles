@@ -24,11 +24,13 @@ hl.bind(mainMod .. " + down", hl.dsp.focus({ direction = "down" }))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen("toggle"))
 
 -- Screenshots
-hl.bind("Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +%s).png | grim - |wl-copy"))
+hl.bind("Print", hl.dsp.exec_cmd("grim ~/Pictures/Screenshots/$(date +%s).png; grim - |wl-copy"))
 hl.bind("CTRL + Print", hl.dsp.exec_cmd('grim -g "$(slurp)" - | wl-copy'))
 hl.bind(
 	"SHIFT + Print",
-	hl.dsp.exec_cmd('grim -g "$(slurp)" ~/Pictures/Screenshots/eenshots/$(date +%s).png | grim - | wl-copy')
+	hl.dsp.exec_cmd(
+		'f=~/Pictures/Screenshots/$(date +%s).png; grim -g "$(slurp)" "$f"; wl-copy --type image/png < "$f"'
+	)
 )
 
 -- Switch workspaces with mainMod + [0-9]
