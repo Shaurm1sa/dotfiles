@@ -56,6 +56,13 @@
     },
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
   },
+  "custom/weather": {
+    "exec": "node ~/.config/waybar/scripts/weather.js",
+    "return-type": "json",
+    "interval": 600,
+    "tooltip": true,
+  },
+
   "network": {
     "format-wifi": "{icon} {essid}",
     "format-ethernet": "󰈀 {ifname}",
