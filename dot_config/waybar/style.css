@@ -38,7 +38,7 @@ window#waybar {
   background-color: #1e1e2e;
   color: #f38ba8;
 }
-
+#custom-weather,
 #network,
 #clock,
 #language,
@@ -105,6 +105,10 @@ window#waybar.empty #window {
 
 #pulseaudio.muted {
   color: #a6adc8;
+}
+
+#custom-weather {
+  color: #f38ba8;
 }
 
 #custom-power {

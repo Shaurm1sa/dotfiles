@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["custom/weather", "hyprland/window"],
+  "modules-left": ["custom/weather","hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
@@ -57,7 +57,7 @@
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
   },
   "custom/weather": {
-    "exec": "node ~/.config/waybar/scripts/weather.js",
+    "exec": "cd ~/.config/waybar/scripts && node weather.js",
     "return-type": "json",
     "interval": 600,
     "tooltip": true,
