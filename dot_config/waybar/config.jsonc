@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["hyprland/window"],
+  "modules-left": ["custom/weather", "hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
