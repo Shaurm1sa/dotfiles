@@ -19,5 +19,5 @@ hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
 --------------
 
 hl.env("QT_QPA_PLATFORMTHEME", "qt6ct")
-hl.env("GTK_THEME", "Breeze-Dark")
-hl.env("GTK_ICON_THEME", "breeze-dark")
+hl.env("GTK_THEME", "Breeze:dark")
+hl.env("GTK_ICON_THEME", "Papirus-Dark")

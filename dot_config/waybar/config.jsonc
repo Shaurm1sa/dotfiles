@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["custom/weather","hyprland/window"],
+  "modules-left": ["clock#simpleclock","custom/weather","hyprland/window"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
@@ -16,7 +16,6 @@
     "pulseaudio",
     "hyprland/language",
     "clock",
-    "clock#simpleclock",
     "tray",
     "custom/power",
   ],
