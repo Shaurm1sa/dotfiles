@@ -1,13 +1,13 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 40,
+  "height": 42,
   "spacing": 2,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["clock#simpleclock","custom/weather","hyprland/window"],
+  "modules-left": ["clock","clock#simpleclock","custom/weather",], // "hyprland/window"
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
@@ -15,7 +15,6 @@
     "memory",
     "pulseaudio",
     "hyprland/language",
-    "clock",
     "tray",
     "custom/power",
   ],
@@ -26,12 +25,13 @@
     "disable-scroll": false,
     "active-only": false,
   },
-  "hyprland/window": {
-    "format": "{title}",
-    "max-length": 30,
-    "icon": true,
-  },
+  // "hyprland/window": {
+  //   "format": "{title}",
+  //   "max-length": 30,
+  //   "icon": true,
+  // },
   "tray": {
+
     "show-passive-items": true,
     "spacing": 10,
   },
@@ -81,7 +81,7 @@
   },
   "cpu": {
     "format": " {usage}%",
-    "tooltip": true,
+    "tooltip": false,
     "interval": 1,
   },
   "memory": {

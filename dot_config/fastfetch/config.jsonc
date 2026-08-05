@@ -75,26 +75,6 @@
     "break",
     {
       "type": "custom",
-      "format": "┌──────────────────────Uptime / Age────────────────────┐"
-    },
-    {
-      "type": "disk",
-      "folders": "/",
-      "key": "│   OS Age ",
-      "keyColor": "35", // Фіолетовий колір
-      "format": "{days} days"
-    },
-    {
-      "type": "uptime",
-      "key": "│   Uptime "
-    },
-    {
-      "type": "custom",
-      "format": "└──────────────────────────────────────────────────────┘"
-    },
-    "break",
-    {
-      "type": "custom",
       "format": "┌────────────────────────DM / WM───────────────────────┐"
     },
     {
@@ -128,6 +108,26 @@
     {
       "type": "cursor",
       "key": "│   Cursor "
+    },
+    {
+      "type": "custom",
+      "format": "└──────────────────────────────────────────────────────┘"
+    },
+    "break",
+    {
+      "type": "custom",
+      "format": "┌──────────────────────Uptime / Age────────────────────┐"
+    },
+    {
+      "type": "disk",
+      "folders": "/",
+      "key": "│   OS Age ",
+      "keyColor": "35", // Фіолетовий колір
+      "format": "{days} days"
+    },
+    {
+      "type": "uptime",
+      "key": "│   Uptime "
     },
     {
       "type": "custom",

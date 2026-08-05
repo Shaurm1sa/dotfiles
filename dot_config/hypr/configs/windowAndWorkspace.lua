@@ -42,15 +42,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
-    name  = "pip-window",
-    match = {
-        class = "^zen$",
-        title = "^Зображення в зображенні$",
-    },
-    float = true,
-    pin   = true,
-    size  = "324 181",
-    move  = "1584 886",
+	name = "pip-window",
+	match = {
+		class = "^zen$",
+		title = "^Зображення в зображенні$",
+	},
+	float = true,
+	pin = true,
+	size = "324 181",
+	move = "1584 886",
 })
 
 require("windowrules.thunar")
+require("windowrules.games")
+require("windowrules.discord")
