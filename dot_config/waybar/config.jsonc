@@ -31,9 +31,9 @@
   //   "icon": true,
   // },
   "tray": {
-
     "show-passive-items": true,
     "spacing": 10,
+    "icon-size": 18,
   },
   "clock#simpleclock": {
     "tooltip": false,
