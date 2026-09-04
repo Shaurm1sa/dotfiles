@@ -77,6 +77,10 @@ window#waybar.empty #window {
   color: #cba6f7;
 }
 
+#battery {
+  color: #f38ba8;
+}
+
 #cpu {
   color: #94e2d5;
 }

@@ -16,3 +16,12 @@ hl.window_rule({
 	},
 	immediate = true,
 })
+
+hl.window_rule({
+	match = {
+		title = "W.o.T. Client",
+		class = "steam_app_2397938129",
+	},
+	immediate = true,
+})
+
