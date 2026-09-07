@@ -45,7 +45,7 @@ hl.window_rule({
 	name = "pip-window",
 	match = {
 		class = "^zen$",
-		title = "^Зображення в зображенні$",
+		title = "^Picture-in-Picture$",
 	},
 	float = true,
 	pin = true,
