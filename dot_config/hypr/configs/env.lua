@@ -11,9 +11,16 @@ hl.env("HYPRCURSOR_THEME", "Adwaita")
 ---- NVIDIA ----
 ----------------
 
-hl.env("GBM_BACKEND", "nvidia-drm")
-hl.env("LIBVA_DRIVER_NAME", "nvidia")
-hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+---hl.env("GBM_BACKEND", "nvidia-drm")
+---hl.env("LIBVA_DRIVER_NAME", "nvidia")
+---hl.env("__GLX_VENDOR_LIBRARY_NAME", "nvidia")
+
+-------------
+--- INTEL ---
+-------------
+
+hl.env("AQ_DRM_DEVICES", "/dev/dri/card1:/dev/dri/card0")
+hl.env("LIBVA_DRIVER_NAME", "iHD")
 
 --------------
 --- THEME ----

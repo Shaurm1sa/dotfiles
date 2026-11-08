@@ -25,3 +25,11 @@ hl.window_rule({
 	immediate = true,
 })
 
+hl.window_rule({
+	match = {
+		class = "steam_app_4001890"
+	},
+	immediate = true,
+	fullscreen = true,
+
+})

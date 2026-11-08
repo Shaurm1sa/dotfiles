@@ -8,6 +8,7 @@ hl.on("hyprland.start", function()
 	hl.exec_cmd("kanshi")
 	hl.exec_cmd("dunst")
 	hl.exec_cmd("udiskie -t")
+	hl.exec_cmd("hyprsunset")
 	---FIX OBS---
 	--hl.exec_cmd("killall -9 xdg-desktop-portal-hyprland xdg-desktop-portal")
 	--hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=Hyprland")

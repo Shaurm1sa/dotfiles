@@ -6,12 +6,12 @@
 -- 	scale = "1",
 -- })
 
--- MSI G2412
 hl.monitor({
 	output = "HDMI-A-1",
 	mode = "highrr",
-	position = "auto-left",
+	position = "auto",
 	scale = "1",
+	mirror = "",
 })
 
 hl.monitor({

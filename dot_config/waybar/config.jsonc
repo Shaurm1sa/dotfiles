@@ -7,7 +7,7 @@
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["clock","clock#simpleclock","custom/weather",], // "hyprland/window"
+  "modules-left": ["clock","clock#simpleclock",], // "hyprland/window"
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "network",
@@ -74,12 +74,6 @@
     },
     "tooltip-format": "<span color='#cdd6f4' font='Lexend 16'><tt><small>{calendar}</small></tt></span>",
   },
-  "custom/weather": {
-    "exec": "cd ~/.config/waybar/scripts && node weather.js",
-    "return-type": "json",
-    "interval": 600,
-    "tooltip": true,
-  },
 
   "network": {
     "format-wifi": "{icon} {essid}",
@@ -96,7 +90,7 @@
     "format": "{}",
     "format-en": "US",
     "format-uk": "UA",
-    "keyboard-name": "rockfall-2-optical-tkl-",
+    "keyboard-name": "at-translated-set-2-keyboard",
   },
   "cpu": {
     "format": " {usage}%",
