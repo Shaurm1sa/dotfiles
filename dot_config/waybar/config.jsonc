@@ -17,6 +17,7 @@
     "pulseaudio",
     "hyprland/language",
     "tray",
+    "custom/hypridle",
     "custom/power",
   ],
   "hyprland/workspaces": {
@@ -108,6 +109,13 @@
       "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
+  },
+  "custom/hypridle": {
+    "format": "{}",
+    "exec": "pgrep -x hypridle > /dev/null && echo '󰒲' || echo '󰒳'",
+    "interval": 2,
+    "on-click": "~/.config/waybar/scripts/hypridle-toggle.sh",
+    "tooltip": true,
   },
   "custom/power": {
     "tooltip": false,
